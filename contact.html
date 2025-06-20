@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/all.css">
+
+</head>
+<body class="bg-dark">
+
+
+    <a href="index.html"><button class="btn bg-primary position-absolute rounded-circle d-md-none" style="top:-20px;left:-20px;padding:30px;"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="text-white" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+  <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+</svg></button></a>
+
+    <!-- Navigation Bar Start -->
+
+      <div class="container-fluid d-none d-sm-block overflow-hidden position-fixed" style="height:100vh;z-index:1;width: fit-content;">
+
+        <div class="row">
+
+            <div class="col-2 bg-black d-felx flex-column overflow-hidden this-menu p-3 pt-2 pb-0 ms-3 mt-4 text-white">
+
+                <button class="border-0 rounded-circle bg-black p-1 text-white" onclick="menu_change()"><svg xmlns="http://www.w3.org/2000/svg" class="menu-button" width="20" height="20" fill="currentColor" class="bi bi-list text-white" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg></button>
+
+                <ul class="list-unstyled">
+
+                    <a href="index.html"><li class="p-0 m-0 mt-4" title="HOME"><svg xmlns="http://www.w3.org/2000/svg" class="text-white " width="20" height="20" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+</svg></li></a>
+
+                    <a href="about.html"><li class="p-0 m-0 mt-4" title="ABOUT ME"><svg xmlns="http://www.w3.org/2000/svg" class="text-white " width="20" height="20" fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
+  <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11"/>
+</svg></li></a>
+
+                    <a href="port.html"><li class="p-0 m-0 mt-4" title="PORTFOLIO"><svg xmlns="http://www.w3.org/2000/svg" class="text-white " width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+  <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/>
+  <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/>
+</svg></li></a>
+
+
+                    <a href="contact.html"><li class="p-0 m-0 mt-4" title="CONTACT"><svg xmlns="http://www.w3.org/2000/svg" class="text-white" width="20" height="20" fill="currentColor" class="bi bi-chat-left-fill" viewBox="0 0 16 16">
+  <path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+</svg></li></a>
+
+
+                    <!-- <li class="p-0 m-0 mt-4" title="BLOG"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
+  <path d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765zM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516M0 13.373l5.693-3.163L0 6.873z"/>
+</svg></li> -->
+
+                </ul>
+
+            </div>
+        
+            </div>
+
+            </div> 
+
+    <!-- Navigation Bar Close -->
+
+
+    <!-- Contact Start -->
+
+            <div class="container-fluid bg-dark pb-5">
+
+        <div class="row">
+
+            <div class="col-12 d-flex align-items-center justify-content-center flex-column mt-5">
+
+                <h1 class="text-white fw-bold font1 text-center" style="font-size:60px;">GET <font class="text-primary">IN TOUCH</font></h1>
+
+               <p class="font1 fw-bold text-secondary font-variant fs-5">i’m always open to discussing product design work or partnerships.</p>
+
+            </div>
+
+                </div>
+
+            </div>
+
+    <!-- Contact Close -->
+
+
+    <!-- Contact Form Start -->
+
+    <div class="container-fluid bg-dark pb-5 ps-md-5 ps-lg-0">
+
+        <div class="row d-flex">
+
+            <div class="col-3 d-none d-lg-block"></div>
+
+            <div class="col-lg-3 d-flex flex-column col-md-6">
+
+                <div class="box p-0 m-0">
+                    <p class="text-white p-0 m-0 font1 fw-bold">Phone</p>
+                    
+                    <div class="phone d-flex gap-2 align-items-center p-0 m-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg><p class="text-white mt-3">+91 9512813166</p>
+                    </div>
+
+                </div>
+
+
+                
+                <div class="box p-0 m-0">
+                    <p class="text-white p-0 m-0 font1 fw-bold">Email</p>
+                    
+                    <div class="phone d-flex gap-2 align-items-center p-0 m-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"class="text-primary" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+</svg><p class="text-white mt-3 fw-bold">aryanbarot0011@gmail.com</p>
+                    </div>
+
+                </div>
+
+
+
+                
+                <div class="box p-0 m-0">
+                    <p class="text-white p-0 m-0 font1 fw-bold">Instagram</p>
+                    
+                    <div class="phone d-flex gap-2 align-items-center p-0 m-0">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="text-primary" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg><p class="text-white mt-3 fw-bold">aryanbarot0011</p>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <p class="text-white font1 fw-bold">Social Profiles</p>
+                    <div class="icons d-flex gap-3">
+
+                        <div class="facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg>
+                        </div>
+
+
+                        <div class="instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" class="icon" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+                        </div>
+
+
+                        <div class="twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" class="icon" viewBox="0 0 16 16">
+  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+</svg>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                </div>
+
+
+                <div class="col-lg-5 col-12 mt-5 mt-md-0 col-md-6">
+
+                    <p class="text-white fw-bold">If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.</p>
+
+                    <form action="" class="d-flex flex-wrap gap-3">
+
+                        <div class="one rounded-pill d-flex gap-2">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="text-secondary mt-1 ms-1" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+</svg>
+                            <input type="text" class="fw-bold font1 font-variant" placeholder="your name">
+
+                        </div>
+
+
+                         <div class="one rounded-pill d-flex gap-2">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="text-secondary mt-1 ms-1" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+</svg>
+                            <input type="text" class="fw-bold font1 font-variant" placeholder="your name">
+
+                        </div>
+
+                        
+                         
+                           <div class="form-floating ms-2" style="min-width:280px;">
+  <textarea class="form-control bg-black font1 fw-bold text-white border-0" placeholder="Leave a comment here" style="max-height:200px;"></textarea>
+  <!-- <label for="floatingTextarea">Comments</label> -->
+</div>
+
+                     
+                        
+
+                    </form>
+
+                     <button class="d-flex align-items-center gap-2 pe-3 ps-3 pt-2 pb-2 rounded-pill first-button mt-3 ms-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+</svg>MORE ABOUT ME</button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Contact Form Close -->
+    
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        const menu = document.querySelector('.this-menu');
+
+        function menu_change()
+        {
+            if(menu.style.height=="52px")
+            {
+                menu.style.height="260px";
+            }
+            else
+            {
+                menu.style.height="52px";
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
